@@ -2,6 +2,12 @@ extends layout
 
 block content
   h1= title
-  
+  - const gas = ['gas_type','quantity','cost']
+  - let results;
+  div(class='container-fluid')
+    div(class='row')
+      each results in gas
+        div(class='col-sm-2') #{results}
+       
 
   
